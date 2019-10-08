@@ -2,11 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define _CRT_SECURE_NO_WARNINGS
 
 int main()
 {
 	char myString[1000];
-	printf("Input your choice..\n");
+	printf("Input string..\n:");
 	scanf_s("%s", myString, 1000);
 	int size = 0;
 	while (myString[size] != '\0')
@@ -26,23 +27,31 @@ Slice* algorithm(char myString[], int size)
 	value->value = (char*)malloc(sizeof(char) * 1000);
 	value->size = size;
 	value->value = myString;
-
-	for (int k = 2; k < slices; k++)
+	int bbb = 0;
+	int tempi = 0;
+	for (int k = 2; k <= slices; k++)
 	{
 		charArray2D* my = split(myString, size, k);
 		char** tempo = my->value;
 		int count = 0;
+		int tm = 0;
 
 		while (count < my->size)
 		{
-			//TODO ±ÍÂú
-
-			printf("%s\n", tempo[count]);
-			count++;
+			int v = 0;
+			while (strcmp(tempo[count], tempo[v+count]) == 0)
+			{
+				if (v+count + 1 < my->size)
+					v++;
+				else
+					break;
+			}
+			count += v;
 		}
-}
+	}
+	printf("%d",tempi);
 
-	return NULL;
+	return value;
 }
 
 charArray2D* split(char* myString, int size, int splitNumber)
