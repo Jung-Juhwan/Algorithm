@@ -2,6 +2,7 @@
 
 - **Let's learn & solve algorithm**
 
+***
 
 # README.md 작성 요령법
 여러분들이 저장소에 리포지토리를 추가하면 아래와 같은 README.md 파일이 생성되는 것을 볼수 있습니다!
@@ -65,7 +66,6 @@ int main(void)
 * >이것은 인용이다  
 
   >\>이것은 인용이다
-***
 
 ***
 
