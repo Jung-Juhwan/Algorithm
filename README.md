@@ -1,8 +1,8 @@
 # Algorithm
 
+- **HELLO!
 - **Let's learn & solve algorithm**
 
-***
 ***
 
 # README.md 작성 요령법
