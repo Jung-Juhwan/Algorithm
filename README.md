@@ -1,4 +1,4 @@
 # Algorithm
 
-- **HELLO!
-- **Let's learn & solve algorithm**
+- **Let's learn & solve algorithm.**
+- **If you have solution, add issues and PR.
